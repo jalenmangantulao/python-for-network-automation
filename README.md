@@ -1,6 +1,6 @@
 # mycode (Project Title)
 
-Repo for ATLA3 Python for Network Automation course.
+Repo for ATLA3 Python for Network Automation course. I want to learn how to version control projects with git.
 
 ## Getting Started
 
