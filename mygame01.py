@@ -2,6 +2,13 @@
 """Driving a simple game framework with
    a dictionary object | Alta3 Research"""
 
+import json
+
+def main():
+    with open('myrooms.json', 'r') as rooms:
+        roomStr = rooms.read()
+        roomDecoded = json.loads(roomStr)
+
 def showInstructions():
     """Show the game instructions when called"""
     #print a main menu and the commands
@@ -34,6 +41,7 @@ inventory = []
 # sub dictionary (key, value) ==> (direction in relation to key room, name of room)
 # ex: Hall : { 'south' : 'Kitchen'} The hall has the kitchen to the south of it
 
+"""
 rooms = {
 
             'Hall' : {
@@ -57,7 +65,9 @@ rooms = {
 
          }
 
+"""
 # start the player in the Hall
+# access room via JSON myrooms.getKey('Hall')
 currentRoom = 'Hall'
 
 showInstructions()
