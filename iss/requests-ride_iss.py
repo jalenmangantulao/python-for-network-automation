@@ -14,7 +14,7 @@ def main():
     ## Call the webservice
     groundctrl = requests.get(MAJORTOM)
     # send a post with requests.post()
-    
+    # groundctrl = requests.post(MAJORTOM)
     # send a put with requests.put()
     # send a delete with requests.delete()
     # send a head with requests.head()
