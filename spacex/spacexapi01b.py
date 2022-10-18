@@ -13,18 +13,20 @@ SPACEXURI = "https://api.spacexdata.com/v3/cores"
 def main():
     # create a requests response object by sending an HTTP GET to SPACEXURI
     coreData = requests.get(SPACEXURI)
-
+    
     # Pull JSON off 200 and convert to lists and dictionaries
     listOfCores = coreData.json()
     # print(type(listOfCores))
+    
 
     for core in listOfCores:
         # print(core, end="\n\n")
-        print(f"The core serial of this launch is {core['core_serial']}")
+        # print(f"The core serial of this launch is {core['core_serial']}")
         # code challenge 01
-        print(f"The details of this launch are: {core['details']}")
-
-        # datastring = f'The core serial of this launch is {core['core_serial']}'  
-
+        # print(f"The details of this launch are: {core['details']}")
+        
+        # code challenge 02
+        print(f"Core Serial: {core['core_serial']}\nOriginal Launch: {core['original_launch']}\nDetails: {core.get('detail')}\n\n")
+    print(type(core))
 if __name__ == "__main__":
     main()
