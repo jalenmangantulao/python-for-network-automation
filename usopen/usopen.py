@@ -12,6 +12,7 @@ The IPs and device type should be made available via an Excel spreadsheet
 '''
 import os
 
+import bootstrapper
 ## pyexcel and pyexce-xls are required for our program to execute
 # python3 -m pip install --user pyexcel
 # python3 -m pip install --user pyexcel-xls
