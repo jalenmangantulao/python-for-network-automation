@@ -64,6 +64,7 @@ def get_names():
                     names.add(name.strip())
         return list(names)
 
+    # print(names)
     # Raise an exception if we failed to get any data from the url
     raise Exception('Error retrieving contents at {}'.format(url))
 
