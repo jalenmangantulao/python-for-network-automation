@@ -41,3 +41,4 @@ ansible_network_os=eos
 ;
 ;[vyosswitches:vars]
 ;ansible_network_os=vyos
+;commandtoshowinterfaces="show interface"
